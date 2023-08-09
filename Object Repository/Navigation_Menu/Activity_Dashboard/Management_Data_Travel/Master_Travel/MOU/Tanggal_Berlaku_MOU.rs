@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@placeholder=&quot;Silahkan isi dengan Tanggal Berlaku MOU&quot;]</value>
+         <value>//*[@id=&quot;root&quot;]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div[5]/div/div[2]/div/input</value>
       </entry>
       <entry>
          <key>BASIC</key>

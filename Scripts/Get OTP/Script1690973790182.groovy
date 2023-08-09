@@ -18,6 +18,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
+import internal.GlobalVariable
 import org.openqa.selenium.By
 import javax.mail.*
 import java.mail.internet.*
@@ -31,19 +32,47 @@ import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 
-WebUI.openBrowser('https://yopmail.com')
+WebUI.openBrowser('https://dev-mhub.mantis.id/')
+
+CustomKeywords.'opennewtab.OpenNewTab.openNewTab'(DriverFactory.getWebDriver())
+
+WebUI.delay(3)
+
+// Navigate to YopMail
+WebUI.navigateToUrl('https://yopmail.com', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(3)
+
+// Set email and click search
 WebUI.setText(findTestObject('Object Repository/YopMail/SetEmail'), "lead.payment")
 WebUI.click(findTestObject('Object Repository/YopMail/button_search'))
 
-WebUI.switchToFrame(findTestObject('Object Repository/YopMail/iframe_inbox'), 0)
+// Wait for iframe and switch to it
+WebUI.waitForElementVisible(findTestObject('Object Repository/YopMail/iframe_inbox'), 10)
+WebUI.switchToFrame(findTestObject('Object Repository/YopMail/iframe_inbox'), 30)
 
-String otpString = WebUI.getText(findTestObject('Object Repository/YopMail/Span_OTP'))
-Pattern pattern = Pattern.compile("\\d{6}")
-Matcher matcher = pattern.matcher(otpString)
+// Get OTP from the email
 String otp = ""
-if (matcher.find()) {
-	otp = matcher.group()
+try {
+    String otpString = WebUI.getText(findTestObject('Object Repository/YopMail/Span_OTP'))
+    Pattern pattern = Pattern.compile("\\d{6}")
+    Matcher matcher = pattern.matcher(otpString)
+	matcher.toString()
+    if (matcher.find()) {
+        otp = matcher.group()
+        println("Kode OTP: " + otp)
+    } else {
+        println("OTP not found in the email.")
+    }
+} catch (Exception ex) {
+    println("Failed to get OTP from the email: " + ex.getMessage())
 }
 
-println(otp)
+// Switch back to the original tab
+WebUI.switchToDefaultContent()
 
+WebUI.switchToWindowIndex(0)
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()

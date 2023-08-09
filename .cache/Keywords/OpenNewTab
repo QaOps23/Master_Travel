@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "DF985F2F72EC793A21E4C91DB5878F92",
+  "keywordClasses": [
+    {
+      "name": "OpenNewTab",
+      "keywordMethods": [
+        {
+          "name": "openNewTab",
+          "parameters": [
+            {
+              "name": "driver",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.openqa.selenium.WebDriver",
+                "unresolvedClassName": "WebDriver",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

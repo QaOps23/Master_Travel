@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Tanggal_Berakhir_MOU</name>
+   <name>Tombol_Kirim</name>
    <tag></tag>
-   <elementGuidId>e4682d6e-15ea-41b9-a53b-df6cb572a69b</elementGuidId>
+   <elementGuidId>9382ebef-c5e3-4f90-8e4a-0c2733905552</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;root&quot;]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div[6]/div/div[2]/div/input</value>
+         <value>//button[normalize-space()='Kirim']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
