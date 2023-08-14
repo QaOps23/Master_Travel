@@ -100,7 +100,7 @@ WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard
 
 LocalDate today = LocalDate.now()
 
-DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy")
 
 String formattedDate = today.format(formatter)
 

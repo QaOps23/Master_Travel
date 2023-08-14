@@ -38,6 +38,8 @@ WebUI.click(findTestObject('Object Repository/Login/Button_Login'))
 
 WebUI.maximizeWindow()
 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Finance'), 0)
+
 WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Finance'))
 
 WebUI.scrollToElement(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Channeling'), 10)
@@ -67,11 +69,9 @@ WebUI.navigateToUrl('https://yopmail.com', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(3)
 
-// Set email and click search
 WebUI.setText(findTestObject('Object Repository/YopMail/SetEmail'), "lead.payment")
 WebUI.click(findTestObject('Object Repository/YopMail/button_search'))
 
-// Wait for iframe and switch to it
 WebUI.waitForElementVisible(findTestObject('Object Repository/YopMail/iframe_inbox'), 10)
 WebUI.switchToFrame(findTestObject('Object Repository/YopMail/iframe_inbox'), 30)
 
@@ -103,4 +103,5 @@ WebUI.delay(2)
 
 WebUI.sendKeys(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/OTP'), otp)
 
+WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tombol_Kirim'))

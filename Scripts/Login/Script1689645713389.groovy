@@ -17,10 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser("https://dev-mhub.mantis.id/signin")
-WebUI.setText(findTestObject('Object Repository/Login/UserName'), "digitaladmin1")
-WebUI.setText(findTestObject('Object Repository/Login/Password'), "Password@25")
+WebUI.openBrowser('https://dev-mhub.mantis.id/signin')
+
+WebUI.setText(findTestObject('Object Repository/Login/UserName'), 'digitaladmin1')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login/Password'), 'p4y+y39Ir5Pc+STqmPi2bw==')
+
 WebUI.click(findTestObject('Object Repository/Login/Button_Login'))
 
 WebUI.maximizeWindow()
 
+WebUI.takeScreenshot()

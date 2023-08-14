@@ -41,6 +41,8 @@ String Unggahfile = filePath + fileName
 
 WebUI.uploadFile(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Konfirmasi Pencairan/Unggah_File'), Unggahfile)
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Konfirmasi Pencairan/Tombol_Submit'))
 
 WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Konfirmasi Pencairan/Tombol_Yakin'))
