@@ -38,6 +38,7 @@ WebUI.click(findTestObject('Object Repository/Login/Button_Login'))
 
 WebUI.maximizeWindow()
 
+
 WebUI.waitForElementClickable(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Finance'), 30)
 
 WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Finance'))
