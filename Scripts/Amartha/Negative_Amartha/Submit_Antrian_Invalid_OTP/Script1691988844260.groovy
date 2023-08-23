@@ -39,38 +39,38 @@ WebUI.click(findTestObject('Object Repository/Login/Button_Login'))
 WebUI.maximizeWindow()
 
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Finance'), 30)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Finance/NavBar-Finance'), 30)
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Finance'))
+WebUI.click(findTestObject('Object Repository/Finance/NavBar-Finance'))
 
-WebUI.scrollToElement(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Channeling'), 10)
+WebUI.scrollToElement(findTestObject('Object Repository/Finance/NavBar-Channeling'), 10)
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Channeling'))
+WebUI.click(findTestObject('Object Repository/Finance/NavBar-Channeling'))
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Pencairan Channeling'))
+WebUI.click(findTestObject('Object Repository/Finance/NavBar-Pencairan Channeling'))
 
 // tickmark satu batch id
-//WebUI.check(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Pencairan Dana/CheckBox', [('row') : 1]))
+//WebUI.check(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Pencairan Dana/CheckBox', [('row') : 1]))
 
 // user klik proses pembayaran
-//WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Pencairan Dana/Tombol_Proses_Pencairan'))
+//WebUI.click(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Pencairan Dana/Tombol_Proses_Pencairan'))
 
-//WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Pencairan Dana/Tombol_Yakin'))
+//WebUI.click(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Pencairan Dana/Tombol_Yakin'))
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tab_Antrian'))
+WebUI.click(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tab_Antrian'))
 
 // user memproses antrian pembayaran
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tombol_Proses_Bayar'))
+WebUI.click(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tombol_Proses_Bayar'))
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tombol_Yakin'))
+WebUI.click(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tombol_Yakin'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/OTP'), '111111')
+WebUI.sendKeys(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/OTP'), '111111')
 
 
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tombol_Kirim'))
+WebUI.click(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Tombol_Kirim'))
 
-WebUI.getText(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Invalid_OTP',[('message'):'Kode OTP yang anda masukkan salah.']))
+WebUI.getText(findTestObject('Object Repository/Finance/Channeling/Pencairan Channeling/Antrian Pembayaran/Invalid_OTP',[('message'):'Kode OTP yang anda masukkan salah.']))
 
 WebUI.takeScreenshot()
 

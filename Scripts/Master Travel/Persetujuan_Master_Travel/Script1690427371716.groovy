@@ -25,14 +25,14 @@ WebUI.click(findTestObject('Object Repository/Login/Button_Login'))
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Pointer_Activity_Dashboard'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Pointer_Umroh'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Pointer_Managemen_Data_Travel'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Persetujuan_Master_Travel/Pointer_Persetujuan_Master_Travel'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Pointer_Activity_Dashboard'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Pointer_Umroh'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Pointer_Managemen_Data_Travel'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Persetujuan_Master_Travel/Pointer_Persetujuan_Master_Travel'))
 
 // proses persetujuan master travel
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Persetujuan_Master_Travel/Button_Proses',[('row'):2]))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Persetujuan_Master_Travel/TickMark_MOU'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Persetujuan_Master_Travel/Button_Proses',[('row'):2]))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Persetujuan_Master_Travel/TickMark_MOU'))
 WebUI.switchToWindowIndex(0)
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Persetujuan_Master_Travel/Button_Setuju'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Persetujuan_Master_Travel/Button_Setuju'))

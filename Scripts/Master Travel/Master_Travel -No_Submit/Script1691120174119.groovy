@@ -33,11 +33,11 @@ WebUI.click(findTestObject('Object Repository/Login/Button_Login'))
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Pointer_Activity_Dashboard'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Pointer_Umroh'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Pointer_Managemen_Data_Travel'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Pointer_Master_Travel'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Button_Tambah_Travel'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Pointer_Activity_Dashboard'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Pointer_Umroh'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Pointer_Managemen_Data_Travel'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Pointer_Master_Travel'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Button_Tambah_Travel'))
 
 
 //input data travel
@@ -51,144 +51,144 @@ for (int i = 0; i < stringLength; i++) {
 }
 
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Nama_Travel'), "Travel" + " " +randomString.toString())
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/No_NIB_TDP'), "9866789898679879")
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/No_SIUP'), "764569879897988")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Nama_Travel'), "Travel" + " " +randomString.toString())
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/No_NIB_TDP'), "9866789898679879")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/No_SIUP'), "764569879897988")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Alamat'), "Jalan Sentosa")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Alamat'), "Jalan Sentosa")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Provinsi'), "SUMATERA BARAT")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Provinsi'))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Provinsi'), "SUMATERA BARAT")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Provinsi'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Kota_Kabupaten'), "SOLOK SELATAN")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Kota_Kabupaten'))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Kota_Kabupaten'), "SOLOK SELATAN")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Kota_Kabupaten'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Kecamatan'), "SANGIR")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Kecamatan', [('index'): 'SANGIR']))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Kecamatan'), "SANGIR")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Kecamatan', [('index'): 'SANGIR']))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Kelurahan'), "PALABIHAN")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Kelurahan'))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Kelurahan'), "PALABIHAN")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Kelurahan'))
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Kode_Pos'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Kode_Pos'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Kode_Pos'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Kode_Pos'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/RT'), "001")
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/RW'), "001")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/RT'), "001")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/RW'), "001")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Nama_NPWP'), "Jaka")
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/No_NPWP'), "874567897765878")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Nama_NPWP'), "Jaka")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/No_NPWP'), "874567897765878")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Nama_Penanggung_Jawab'), "Jaka")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Nama_Penanggung_Jawab'), "Jaka")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Jabatan_Penanggung_Jawab'), "DIREKTUR")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Jabatan_Penanggung_Jawab'))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Jabatan_Penanggung_Jawab'), "DIREKTUR")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Index_Jabatan_Penanggung_Jawab'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Email_Travel_Operasional'), "jaka@yopmail.com")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Email_Travel_Operasional'), "jaka@yopmail.com")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Email_Travel_Pembayaran'), "jaka@yopmail.com")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Email_Travel_Pembayaran'), "jaka@yopmail.com")
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Button_Berikutnya'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Travel/Button_Berikutnya'))
 
 //pilih cabang
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Cabang/Cari_Nama_Cabang'), "Bogor")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Cabang/Button_Terusuri'))
-WebUI.check(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Cabang/Tickmark_Nama_Cabang'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Cabang/Button_Berikutnya'))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Cabang/Cari_Nama_Cabang'), "Bogor")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Cabang/Button_Terusuri'))
+WebUI.check(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Cabang/Tickmark_Nama_Cabang'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Cabang/Button_Berikutnya'))
 
 //input Daftar Paket
 
 LocalDate today = LocalDate.now()
 
-DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy")
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
 
 String formattedDate = today.format(formatter)
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Nama_Paket'), "Paket a")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Nama_Paket'), "Paket a")
 
-WebUI.sendKeys(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Tanggal_Mulai'), formattedDate)
+WebUI.sendKeys(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Tanggal_Mulai'), formattedDate)
 
-WebUI.sendKeys(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Tanggal_Berakhir'), "22-Oct-2023")
+WebUI.sendKeys(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Tanggal_Berakhir'), "22-Oct-2023")
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Button_Tambah_Paket'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Button_Tambah_Paket'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Nama_Paket2'), "paket b")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Nama_Paket2'), "paket b")
 
-WebUI.sendKeys(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Tanggal_Mulai2'), formattedDate)
+WebUI.sendKeys(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Tanggal_Mulai2'), formattedDate)
 
-WebUI.sendKeys(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Tanggal_Berakhir2'), "22-Oct-2023")
+WebUI.sendKeys(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Tanggal_Berakhir2'), "22-Oct-2023")
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Button_Berikutnya'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Paket/Button_Berikutnya'))
 
 //daftar jenis paket
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Nama_Paket'), "PAKET A")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Index_Nama_Paket'))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Nama_Paket'), "PAKET A")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Index_Nama_Paket'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Jenis_Paket'), "GOLD")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Jenis_Paket'), "GOLD")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Harga'), "20000000")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Harga'), "20000000")
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Button_Tambah_Jenis_Paket'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Button_Tambah_Jenis_Paket'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Nama_Paket2'), "PAKET B")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Index_Nama_Paket'))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Nama_Paket2'), "PAKET B")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Index_Nama_Paket'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Jenis_Paket2'), "GOLD")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Jenis_Paket2'), "GOLD")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Harga2'), "20000000")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Harga2'), "20000000")
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Buttton_Berikutnya'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Daftar_Jenis_Paket/Buttton_Berikutnya'))
 
 //data pembayaran
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Nama_Bank'), "BANK CIMB NIAGA")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'BANK CIMB NIAGA']))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Nama_Bank'), "BANK CIMB NIAGA")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'BANK CIMB NIAGA']))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/No_Rekening'), "12129809798989")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Button_Validasi'))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/No_Rekening'), "12129809798989")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Button_Validasi'))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Metode_Pemabayara'), "TRANSFER")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'TRANSFER']))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Metode_Pemabayara'), "TRANSFER")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'TRANSFER']))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Jenis_Pajak'), "PERSONAL")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'PERSONAL']))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Jenis_Pajak'), "PERSONAL")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'PERSONAL']))
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Kewarganegaraan'), "WNI")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'WNI']))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Kewarganegaraan'), "WNI")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'WNI']))
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/CheckBox'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/CheckBox'))
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Button_Berikutnya'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Button_Berikutnya'))
 
 
 //input MOU
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/No_MOU'), "9879867799868698")
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Nama_Perusahaan'), "TRAVEL ABC")
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Nama_Penandatangan_MOU'), "ABC")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/No_MOU'), "9879867799868698")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Nama_Perusahaan'), "TRAVEL ABC")
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Nama_Penandatangan_MOU'), "ABC")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Jabatan_Penandatangan_MOU'), "DIREKTUR")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'DIREKTUR']))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Jabatan_Penandatangan_MOU'), "DIREKTUR")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): 'DIREKTUR']))
 
-WebUI.sendKeys(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Tanggal_Berlaku_MOU'), formattedDate)
+WebUI.sendKeys(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Tanggal_Berlaku_MOU'), formattedDate)
 
-WebUI.sendKeys(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Tanggal_Berakhir_MOU'), "14 September 2023")
+WebUI.sendKeys(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Tanggal_Berakhir_MOU'), "14 September 2023")
 
-WebUI.setText(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Jatuh_Tempo_Bayar'), "1 HARI")
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): '1 HARI']))
+WebUI.setText(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Jatuh_Tempo_Bayar'), "1 HARI")
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Data_Pemabayaran/Dropdwon_Option', [('index'): '1 HARI']))
 
 
 String filePath = "C:\\Users\\User\\Documents\\Dokumen Upload\\"
 String fileName = "MOU1.pdf"
 String Unggahfile = filePath + fileName
 
-WebUI.uploadFile(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Button_Unggah'), Unggahfile)
+WebUI.uploadFile(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Button_Unggah'), Unggahfile)
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Buttton_Berikutnya'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/MOU/Buttton_Berikutnya'))
 
 
 // Ringkasan
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Ringkasan/Button_Submit'))
-//WebUI.click(findTestObject('Object Repository/Navigation_Menu/Activity_Dashboard/Management_Data_Travel/Master_Travel/Ringkasan/Button_Submit'))
+WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Ringkasan/Button_Submit'))
+//WebUI.click(findTestObject('Object Repository/Master_Travel/Activity_Dashboard/Management_Data_Travel/Master_Travel/Ringkasan/Button_Submit'))
 
 

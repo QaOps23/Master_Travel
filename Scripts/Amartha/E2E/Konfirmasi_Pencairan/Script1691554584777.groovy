@@ -25,26 +25,26 @@ WebUI.click(findTestObject('Object Repository/Login/Button_Login'))
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Finance'))
+WebUI.click(findTestObject('Object Repository/Finance/NavBar-Finance'))
 
-WebUI.scrollToElement(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Channeling'), 10)
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Channeling'))
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/NavBar-Konfirmasi Pencairan'))
+WebUI.scrollToElement(findTestObject('Object Repository/Finance/NavBar-Channeling'), 10)
+WebUI.click(findTestObject('Object Repository/Finance/NavBar-Channeling'))
+WebUI.click(findTestObject('Object Repository/Finance/NavBar-Konfirmasi Pencairan'))
 
 //user proses kofirmasi pencairan
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Konfirmasi Pencairan/Tombol_Proses',[('row'):2]))
+WebUI.click(findTestObject('Object Repository/Finance/Channeling/Konfirmasi Pencairan/Tombol_Proses',[('row'):2]))
 
 String filePath = "C:\\Users\\User\\Documents\\Dokumen Upload\\"
 String fileName = "bukti pembayaran BNI.jpeg"
 String Unggahfile = filePath + fileName
 
-WebUI.uploadFile(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Konfirmasi Pencairan/Unggah_File'), Unggahfile)
+WebUI.uploadFile(findTestObject('Object Repository/Finance/Channeling/Konfirmasi Pencairan/Unggah_File'), Unggahfile)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Konfirmasi Pencairan/Tombol_Submit'))
+WebUI.click(findTestObject('Object Repository/Finance/Channeling/Konfirmasi Pencairan/Tombol_Submit'))
 
-WebUI.click(findTestObject('Object Repository/Navigation_Menu/Finance/Channeling/Konfirmasi Pencairan/Tombol_Yakin'))
+WebUI.click(findTestObject('Object Repository/Finance/Channeling/Konfirmasi Pencairan/Tombol_Yakin'))
 
 
